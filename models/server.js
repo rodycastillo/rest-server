@@ -11,7 +11,7 @@ class Server {
 
         //Connection DB
         this.connectionDB()
-        
+
         //Middleware: Se ejecuta cuando levantamos el servidor
         this.middlewares()
 
@@ -38,7 +38,7 @@ class Server {
 
     listen() {
         this.app.listen(this.port, () => {
-            console.log('LocalHost:', this.port);
+            console.log(`http://localhost:${this.port}/`);
         })
     }
 
